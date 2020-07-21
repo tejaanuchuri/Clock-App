@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function Clock(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p> Hello_world...!</p>
-      </header>
+    <div>
+      <h1>Hello world...!</h1>
+      <h2>The time is {props.date.toLocaleTimeString()}.</h2>
     </div>
   );
 }
 
-export default App;
+
+export default Clock;
